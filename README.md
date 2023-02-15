@@ -483,8 +483,43 @@ Could be any of the following, and not limited to:
 
 Note. As a machine learning engineering, consider to follow a 20/80 rule when it comes to time budget: spend 20% time to get initial working system, 80% on iterative development. When building an end-to-end machine learning pipeline, you will discover hidden bugs or issues that are not obvious when you focus on modeling. 
 
-    "The final goal of all industrial machine learning (ML) projects is to develop ML products and rapidly bring them into production."
+"The final goal of all industrial machine learning (ML) projects is to develop ML products and rapidly bring them into production."
 
+
+## Algorithm Understanding
+
+1. How does the Prophet Algorithm differ from an LSTM?
+
+- Prophet is a statistical model, while LSTM is a type of neural network.
+- Prophet decomposes the time series into trend, seasonality, and holiday components, while LSTM directly processes the raw time series data.
+- Prophet uses non-linear regression to fit the components to the data, while LSTM uses a complex network of interconnected nodes to make predictions.
+
+2. Why does an LSTM have poor performance against ARIMA and Profit for Time Series?
+
+- LSTMs generally require a large amount of data to learn meaningful patterns in the time series.
+- LSTMs can be prone to overfitting the data, especially if the model is too complex or if there are too many features.
+- LSTMs have many hyperparameters that need to be tuned to achieve optimal performance.
+- LSTMs are complex models, and training them can require a significant amount of computing power.
+
+## Interview Readiness
+
+1. What is exponential smoothing and why is it used in Time Series Forecasting?
+
+- Exponential smoothing is a statistical method used for time series forecasting. It is a popular technique for smoothing out noise or random fluctuations in the data and making predictions about future values.
+
+2. What is stationarity? What is seasonality? Why Is Stationarity Important in Time Series Forecasting?
+
+- Stationarity refers to the statistical properties of a time series being constant over time. A stationary time series has constant mean, variance, and autocorrelation structure, regardless of the time at which these statistics are computed.
+- Seasonality refers to the repetitive and predictable fluctuations that occur in a time series at regular intervals, such as weekly, monthly, or yearly.
+- Stationarity is important in time series forecasting because most forecasting models assume that the data is stationary. If the data is not stationary, it can lead to inaccurate predictions and undermine the validity of the forecasting model.
+- Non-stationary data can make it difficult to identify meaningful patterns or trends in the data.
+
+3. How is seasonality different from cyclicality? Fill in the blanks: ___ is predictable, whereas ___ is not.
+
+- Seasonality is predictable, whereas cyclicality is not.
+
+## This criterion is linked to a Learning OutcomeInterview Readiness
+What is exponential smoothing and why is it used in Time Series Forecasting?
 
 # Fun fact
 <p align="center">
