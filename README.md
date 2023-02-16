@@ -518,6 +518,33 @@ Note. As a machine learning engineering, consider to follow a 20/80 rule when it
 
 - Seasonality is predictable, whereas cyclicality is not.
 
+4. What does it mean to create a Docker image and why do we use Docker images?
+
+- The process of creating a Docker image typically involves creating a Dockerfile, which is a text file that defines the image's content and how it should be built.
+
+- Efficiency: Docker images are lightweight and can be created and deployed quickly, which makes it easy to test and deploy applications in a continuous integration/continuous deployment (CI/CD) pipeline.
+- Reproducibility: Docker images provide a way to ensure that an application runs consistently across different environments. 
+- Portability: Docker images allow us to package an application and its dependencies in a way that is independent of the host system.
+- Scalability: Docker images can be used to create multiple identical containers that can run in parallel, allowing applications to scale up or down as needed.
+
+5. Please explain what is the difference from a Container vs a Virtual Machine?
+
+- A container is a lightweight, standalone executable package that contains everything needed to run an application, including the code, dependencies, and configurations.
+- A virtual machine is a software emulation of a physical computer that runs its own operating system and applications. 
+
+6. What are 5 examples of container orchestration tools (please list tools)?
+
+- Docker Swarm
+- Kubernetes
+- Apache Mesos
+- Nomad
+- Amazon ECS
+
+7. How does a Docker image differ from a Docker container?
+
+- Docker image is a read-only template that contains a set of instructions for creating a Docker container. 
+- Docker container is a runnable instance of a Docker image. It is created from a Docker image and includes a writable layer that allows changes to be made to the container's filesystem. 
+
 ## This criterion is linked to a Learning OutcomeInterview Readiness
 What is exponential smoothing and why is it used in Time Series Forecasting?
 

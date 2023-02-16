@@ -18,7 +18,7 @@ RUN apt-get -y update --fix-missing \
 RUN pip install --no-cache-dir -U pip
 RUN pip install --no-cache-dir -U cython
 RUN pip install --no-cache-dir -U numpy
-RUN pip install --no-cache-dir -U pystan
+RUN pip install --no-cache-dir -U pystan==2.19.1.1
 
 # copy the src and requirements.txt file
 COPY src/ requirements.txt ./
@@ -26,6 +26,8 @@ COPY src/ requirements.txt ./
 # install libraries from requirements file
 RUN pip install --no-cache-dir -U -r requirements.txt
 
+# expose port 8000
 EXPOSE 8000
 
-CMD [uvicorn]
+# set the command to run the uvicorn server
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
